@@ -1,7 +1,8 @@
 # GRPC Filtering Service
 [TASK](./task.md)
 
-It consists of two microservices written in NestJS, communicating over gRPC
+It consists of two microservices written in NestJS, communicating over gRPC.
+
 In production, it is assumed that the .proto file will be published as a shared npm package and imported into each service to ensure consistency.
 
 ## Producer Service
