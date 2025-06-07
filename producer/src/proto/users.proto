@@ -3,10 +3,10 @@ syntax = "proto3";
 package user;
 
 service UserService {
-  rpc GetFilteredUsers (Empty) returns (Users);
+  rpc GetFilteredUsers (GetUserRequest) returns (GetUserResponse);
 }
 
-message Empty {}
+message GetUserRequest {}
 
 message User {
   int32 id = 1;
@@ -14,6 +14,6 @@ message User {
   int32 age = 3;
 }
 
-message Users {
+message GetUserResponse {
   repeated User users = 1;
 }
